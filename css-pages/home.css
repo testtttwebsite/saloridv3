@@ -1,0 +1,90 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+    background: radial-gradient(circle at center, #111827 0%, #050505 100%);
+    position: sticky;
+    top: 0;
+}
+
+.hero h1 {
+    font-size: clamp(4rem, 12vw, 8rem);
+    font-weight: 800;
+    letter-spacing: -6px;
+    margin-bottom: 1rem;
+    background: linear-gradient(to bottom, #fff 40%, rgba(255,255,255,0.2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stage-container {
+    position: relative;
+    z-index: 10;
+    background: var(--bg);
+    padding: 10vh 2rem;
+}
+
+.stage-card {
+    min-height: 80vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 10vh;
+    background: rgba(13, 13, 17, 0.6);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid var(--border);
+    border-radius: 48px;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    position: sticky;
+    top: 10vh;
+    transition: transform 0.5s ease;
+}
+
+.stage-card:nth-child(2) { top: 12vh; transform: scale(0.98); }
+.stage-card:nth-child(3) { top: 14vh; transform: scale(0.96); }
+
+.stage-content {
+    flex: 1;
+}
+
+.stage-content span {
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.stage-content h2 {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+    letter-spacing: -2px;
+}
+
+.stage-visual {
+    flex: 1;
+    height: 400px;
+    background: linear-gradient(145deg, var(--panel), #000);
+    border-radius: 32px;
+    border: 1px solid var(--border);
+    box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 968px) {
+    .stage-card {
+        flex-direction: column;
+        padding: 3rem;
+        text-align: center;
+    }
+    .stage-content h2 { font-size: 2.5rem; }
+}

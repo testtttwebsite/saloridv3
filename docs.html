@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salorid | Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-pages/docs.css">
+</head>
+<body>
+
+    <nav class="ios-nav dark">
+        <div class="nav-logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="nav-center">
+            <div class="nav-track">
+                <span class="bubble"></span>
+                <button class="tab" onclick="window.location.href='index.html'">Home</button>
+                <button class="tab" onclick="window.location.href='buy.html'">Pricing</button>
+                <button class="tab active" onclick="window.location.href='docs.html'">Docs</button>
+                <button class="tab" onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="docs-wrapper">
+        <aside class="docs-sidebar">
+            <div class="search-box">
+                <input type="text" id="docSearch" placeholder="Search documentation..." onkeyup="searchDocs()">
+            </div>
+            <nav class="docs-nav">
+                <div class="nav-group">
+                    <h3>Getting Started</h3>
+                    <a href="#introduction" class="sidebar-link active">Introduction</a>
+                    <a href="#installation" class="sidebar-link">Installation</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="docs-content">
+            <section id="introduction" class="doc-section reveal">
+                <h1>Introduction</h1>
+                <p>Welcome to the Salorid technical documentation. Our client is built on a custom kernel-level framework designed for absolute security and peak performance.</p>
+                <div class="info-alert">
+                    <strong>Note:</strong> Ensure your anti-virus is disabled before the initial installation to allow the driver to map correctly.
+                </div>
+            </section>
+
+            <section id="installation" class="doc-section reveal">
+                <h2>Installation</h2>
+                <p>Follow these steps to get Salorid running on your system:</p>
+                <div class="code-block">
+                    <ol>
+                        <li>Download the <code>salorid_launcher.exe</code> from your dashboard.</li>
+                        <li>Run as Administrator.</li>
+                        <li>Enter your license key when prompted.</li>
+                        <li>Restart your PC to finalize driver mapping.</li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js-global/nav-logic.js"></script>
+    <script src="js-docs/docs.js"></script>
+</body>
+</html>

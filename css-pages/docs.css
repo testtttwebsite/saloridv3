@@ -1,0 +1,93 @@
+.docs-wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10rem 2rem 5rem;
+}
+
+.docs-sidebar {
+    position: sticky;
+    top: 120px;
+    height: calc(100vh - 150px);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 1rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 2rem;
+    outline: none;
+    transition: var(--transition);
+}
+
+.search-box input:focus {
+    border-color: var(--accent);
+}
+
+.nav-group h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: var(--transition);
+    margin-bottom: 0.2rem;
+}
+
+.sidebar-link:hover, .sidebar-link.active {
+    background: var(--glass);
+    color: var(--accent);
+}
+
+.doc-section {
+    margin-bottom: 6rem;
+}
+
+.doc-section h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
+.doc-section h2 { font-size: 2.2rem; margin-bottom: 1rem; color: var(--accent); }
+.doc-section p { font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; }
+
+.info-alert {
+    background: rgba(59, 130, 246, 0.1);
+    border-left: 4px solid var(--accent);
+    padding: 1.5rem;
+    border-radius: 0 12px 12px 0;
+    margin: 2rem 0;
+}
+
+.code-block {
+    background: #000;
+    border: 1px solid var(--border);
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 2rem 0;
+}
+
+.code-block ol { padding-left: 1.2rem; color: var(--text-muted); }
+.code-block li { margin-bottom: 1rem; }
+
+code {
+    background: var(--glass);
+    color: var(--accent);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+@media (max-width: 1024px) {
+    .docs-wrapper { grid-template-columns: 1fr; }
+    .docs-sidebar { display: none; }
+}

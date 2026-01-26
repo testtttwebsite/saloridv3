@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salorid | Elite Performance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-pages/home.css">
+</head>
+<body>
+
+    <nav class="ios-nav dark">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="nav-center">
+            <div class="nav-track">
+                <span class="bubble"></span>
+                <button class="tab active" onclick="window.location.href='index.html'">Home</button>
+                <button class="tab" onclick="window.location.href='buy.html'">Pricing</button>
+                <button class="tab" onclick="window.location.href='docs.html'">Docs</button>
+                <button class="tab" onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 class="reveal">Salorid Client<span>.</span></h1>
+        <div class="reveal" style="display: flex; gap: 15px;">
+            <a href="buy.html" class="btn btn-primary">Get Access</a>
+            <a href="docs.html" class="btn btn-secondary">Explore Features</a>
+        </div>
+    </header>
+
+ <header class="hero">
+    <h1 class="reveal">Salorid<span>.</span></h1>
+    <p class="reveal">Salorid Client gives you long hands.</p>
+</header>
+
+<main class="stage-container">
+    <section class="stage-card reveal">
+        <div class="stage-content">
+            <span>Engineering</span>
+            <h2>Pure Speed. No Latency.</h2>
+            <p>This is just an example text that qlist dumb ahh will need to change later</p>
+            <a href="buy.html" class="btn btn-primary" style="margin-top: 2rem;">Get Started</a>
+        </div>
+        <div class="stage-visual"></div>
+    </section>
+
+    <section class="stage-card reveal">
+        <div class="stage-content">
+            <span>Security</span>
+            <h2>Invisible by Design.</h2>
+            <p>This is just an example text that qlist dumb ahh will need to change later</p>
+        </div>
+        <div class="stage-visual" style="background: radial-gradient(circle at center, var(--accent-glow), transparent);"></div>
+    </section>
+
+    <section class="stage-card reveal">
+        <div class="stage-content">
+            <span>Interface</span>
+            <h2>Minimalist Control.</h2>
+            <p>This is just an example text that qlist dumb ahh will need to change later</p>
+        </div>
+        <div class="stage-visual"></div>
+    </section>
+</main>
+    <script src="js-global/nav-logic.js"></script>
+    <script src="js-home/home.js"></script>
+
+</body>
+</html>

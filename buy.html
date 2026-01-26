@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salorid | Pricing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-pages/buy.css">
+</head>
+<body>
+
+    <nav class="ios-nav dark">
+        <div class="nav-logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="nav-center">
+            <div class="nav-track">
+                <span class="bubble"></span>
+                <button class="tab" onclick="window.location.href='index.html'">Home</button>
+                <button class="tab active" onclick="window.location.href='buy.html'">Pricing</button>
+                <button class="tab" onclick="window.location.href='docs.html'">Docs</button>
+                <button class="tab" onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pricing-header">
+        <h1 class="reveal">Choose your power<span>.</span></h1>
+        <p class="reveal">Transparent pricing for elite performance.</p>
+    </section>
+
+    <main class="pricing-grid">
+        <div class="price-card reveal">
+            <h3>Starter</h3>
+            <div class="price-value">$15<span>/mo</span></div>
+            <ul class="feature-list">
+                <li>placeholder</li>
+                <li>placeholder</li>
+                <li>placeholder</li>
+            </ul>
+            <button class="btn btn-secondary" onclick="processPayment('Starter')">Select Plan</button>
+        </div>
+
+        <div class="price-card featured reveal">
+            <div class="badge">MOST POPULAR</div>
+            <h3>Professional</h3>
+            <div class="price-value">$35<span>/mo</span></div>
+            <ul class="feature-list">
+                <li>placeholder</li>
+                <li>placeholder</li>
+                <li>placeholder</li>
+                <li>placeholder</li>
+            </ul>
+            <button class="btn btn-primary" onclick="processPayment('Professional')">Select Plan</button>
+        </div>
+
+        <div class="price-card reveal">
+            <h3>Lifetime</h3>
+            <div class="price-value">$120<span>/once</span></div>
+            <ul class="feature-list">
+                <li>placeholder</li>
+                <li>placeholder</li>
+                <li>placeholder</li>
+                <li>placeholder</li>
+            </ul>
+            <button class="btn btn-secondary" onclick="processPayment('Lifetime')">Select Plan</button>
+        </div>
+    </main>
+
+    <script src="js-global/nav-logic.js"></script>
+    <script src="js-buy/buy.js"></script>
+</body>
+</html>

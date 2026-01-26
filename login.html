@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salorid | Access Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-pages/auth.css">
+</head>
+<body>
+    <nav class="ios-nav dark">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="nav-center">
+            <div class="nav-track">
+                <span class="bubble"></span>
+                <button class="tab" onclick="window.location.href='index.html'">Home</button>
+                <button class="tab" onclick="window.location.href='buy.html'">Pricing</button>
+                <button class="tab" onclick="window.location.href='docs.html'">Docs</button>
+                <button class="tab active" onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="auth-wrapper" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px;">
+        <div class="auth-box reveal" style="background: var(--panel); padding: 3rem; border-radius: 24px; border: 1px solid var(--border); width: 100%; max-width: 400px;">
+            <div class="auth-header" style="text-align: center; margin-bottom: 2rem;">
+                <h2 id="authTitle" style="font-size: 2rem; margin-bottom: 0.5rem;">Welcome Back</h2>
+                <p id="authSubtitle" style="color: var(--text-muted); font-size: 0.9rem;">Enter your credentials to access the dashboard.</p>
+            </div>
+
+            <form id="authForm">
+                <div style="margin-bottom: 1rem;">
+                    <input type="email" id="authEmail" placeholder="Email Address" required style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg); color: white;">
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <input type="password" id="authPassword" placeholder="Password" required style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg); color: white;">
+                </div>
+
+                <button type="submit" id="authBtn" class="btn btn-primary" style="width: 100%; padding: 14px; cursor: pointer;">Sign In</button>
+            </form>
+
+            <div class="auth-footer" style="text-align: center; margin-top: 2rem;">
+                <p style="font-size: 0.9rem; color: var(--text-muted);">
+                    Don't have an account? 
+                    <a href="register.html" style="color: var(--accent); text-decoration: none; font-weight: 600;">Create one</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js-global/nav-logic.js"></script>
+    <script src="js-auth/auth.js"></script>
+</body>
+</html>

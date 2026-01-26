@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salorid | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-pages/dashboard.css">
+</head>
+<body>
+
+    <nav class="ios-nav dark">
+        <div class="nav-logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="nav-center">
+            <div class="nav-track">
+                <span class="bubble"></span>
+                <button class="tab" onclick="window.location.href='index.html'">Home</button>
+                <button class="tab" onclick="window.location.href='buy.html'">Pricing</button>
+                <button class="tab" onclick="window.location.href='docs.html'">Docs</button>
+                <button class="tab" onclick="window.location.href='index.html'">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dash-container">
+        <header class="dash-header reveal">
+            <h1>Welcome back, <span>User</span></h1>
+            <p>System Status: <span class="status-online">Operational</span></p>
+        </header>
+
+        <div class="dash-grid">
+            <div class="dash-card main-card reveal">
+                <div class="card-info">
+                    <h3>Active License</h3>
+                    <p class="license-key">SLRD-XXXX-XXXX-XXXX</p>
+                    <span class="expiry">Expires in 24 days</span>
+                </div>
+                <button class="btn btn-primary" onclick="downloadClient()">Download Client</button>
+            </div>
+
+            <div class="dash-card stats-card reveal">
+                <h3>Global Stats</h3>
+                <div class="stat-item">
+                    <span>Active Users</span>
+                    <strong>1,284</strong>
+                </div>
+                <div class="stat-item">
+                    <span>Latest Version</span>
+                    <strong>v2.0.4</strong>
+                </div>
+            </div>
+
+            <div class="dash-card logs-card reveal">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h3>Changelog</h3>
+        <span style="font-size: 0.75rem; background: var(--glass); padding: 4px 10px; border-radius: 20px; color: var(--accent);">LATEST: v2.0.4</span>
+    </div>
+    <div class="log-entry">
+        <strong>[+]</strong> placeholder
+    </div>
+    <div class="log-entry">
+        <strong>[fixed]</strong> placeholder
+    </div>
+    <div class="log-entry">
+        <strong>[updated]</strong> placeholder
+    </div>
+    <div class="log-entry" style="border-bottom: none; opacity: 0.5;">
+        <strong>[v2.0.3]</strong> placeholder
+    </div>
+</div>
+    </main>
+
+    <script src="js-global/nav-logic.js"></script>
+    <script src="js-dash/dash.js"></script>
+</body>
+</html>

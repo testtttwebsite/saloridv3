@@ -1,0 +1,90 @@
+.dash-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10rem 2rem 5rem;
+}
+
+.dash-header {
+    margin-bottom: 3rem;
+}
+
+.dash-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+}
+
+.dash-header h1 span {
+    color: var(--accent);
+}
+
+.status-online {
+    color: var(--success);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.dash-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.dash-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.main-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(59,130,246,0.1), transparent);
+}
+
+.license-key {
+    font-family: monospace;
+    font-size: 1.2rem;
+    color: var(--text-main);
+    background: rgba(0,0,0,0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+.expiry {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.stat-item span { color: var(--text-muted); }
+
+.log-entry {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.logs-card {
+    grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+    .dash-grid { grid-template-columns: 1fr; }
+    .logs-card { grid-column: span 1; }
+    .main-card { flex-direction: column; text-align: center; gap: 2rem; }
+}
