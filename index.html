@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salorid | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-pages/home.css">
+</head>
+<body>
+
+    <nav class="ios-nav dark">
+        <div class="nav-logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="nav-center">
+            <div class="nav-track">
+                <span class="bubble"></span>
+                <button class="tab active" onclick="window.location.href='index.html'">Home</button>
+                <button class="tab" onclick="window.location.href='buy.html'">Pricing</button>
+                <button class="tab" onclick="window.location.href='docs.html'">Docs</button>
+                <button class="tab" onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Salorid<span>.</span></h1>
+            <p>Salorid Client gives you long hands.</p>
+        </div>
+    </header>
+
+    <main class="stage-container">
+        <section class="stage-card">
+            <div class="stage-content">
+                <span>Engineering</span>
+                <h2>Pure Speed. No Latency.</h2>
+                <p>This is just an example text that qlist dumb ahh will need to change later.</p>
+                <a href="buy.html" class="btn btn-primary" style="margin-top: 2rem;">Get Started</a>
+            </div>
+            <div class="stage-visual"></div>
+        </section>
+
+        <section class="stage-card">
+            <div class="stage-content">
+                <span>Security</span>
+                <h2>Invisible by Design.</h2>
+                <p>This is just an example text that qlist dumb ahh will need to change later.</p>
+            </div>
+            <div class="stage-visual" style="background: radial-gradient(circle at center, rgba(59,130,246,0.2), transparent);"></div>
+        </section>
+
+        <section class="stage-card">
+            <div class="stage-content">
+                <span>Interface</span>
+                <h2>Minimalist Control.</h2>
+                <p>This is just an example text that qlist dumb ahh will need to change later.</p>
+            </div>
+            <div class="stage-visual"></div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="logo.png" alt="Logo" class="footer-logo-compact">
+            </div>
+            
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="https://discord.gg/salorid" target="_blank" class="discord-link">Join Discord</a></li>
+                    <li><a href="docs.html">Documentation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="buy.html">Pricing</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Salorid. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js-global/nav-logic.js"></script>
+    <script src="js-home/home.js"></script>
+
+</body>
+</html>
